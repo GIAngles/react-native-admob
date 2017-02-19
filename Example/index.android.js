@@ -20,7 +20,7 @@ export default class Example extends Component {
   }
 
   componentDidMount() {
-    AdMobInterstitial.setTestDeviceID('EMULATOR');
+    AdMobInterstitial.setTestDeviceIDs(['EMULATOR']);
     AdMobInterstitial.setAdUnitID('ca-app-pub-3940256099942544/1033173712');
 
     AdMobInterstitial.addEventListener('interstitialDidLoad',
@@ -79,7 +79,7 @@ export default class Example extends Component {
         </View>
         <AdMobBanner
           bannerSize={this.state.bannerSize}
-          testDeviceID="EMULATOR"
+          testDeviceIDs={['EMULATOR']}
           adUnitID="ca-app-pub-3940256099942544/2934735716"
         />
       </View>
